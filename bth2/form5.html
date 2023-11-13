@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form5</title>
+</head>
+<body>
+  <div>
+    <label><input type="text" id="uppercase" autofocus></label>
+  </div>
+  <script>
+    let event = document.getElementById("uppercase");
+    event.addEventListener("blur", moveOver);
+    function moveOver(){
+      let text = document.getElementById("uppercase").value;
+      text = text.toUpperCase();
+      document.getElementById("uppercase").value = text;
+    }
+  </script>
+</body>
+</html>

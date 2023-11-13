@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: "Times New Roman", sans-serif;
+            /*font-size: 34px;*/
+            color: #111;
+            line-height: 1.15;
+            background-color: #F0FFFF;
+        }
+        .wrapper{
+            max-width: 1348px;
+            max-height: 650px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        .head{
+            height: 50px;
+            border-bottom: solid 1px black;
+        }
+        .body{
+            border-bottom: solid 1px black;
+            height: 546px;
+        }
+        .left{
+            border-right: 1px solid black;
+            width: 250px;
+            height: 547px;
+            float: left;
+        }
+        .left li {
+            font-size: 35px;
+            padding: 10px;
+            height: 40px;
+            list-style: none;
+            text-align: center;
+        }
+        .left a {
+            text-decoration: none;
+            transition: 0.5s;
+        }
+        .middle {
+            border-right: solid 1px black;
+            height: 547px;
+            width: 848px;
+            float: left;
+        }
+        .middle a {
+            font: 35px bold black "Times New Roman", sans-serif;
+        }
+        .right{
+            float: right;
+        }
+        .footer{
+            clear: both;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <label id = "headline"><h1>T1</h1></label>
+        </div>
+        <div class="body">
+            <div class="left">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="form1.html">Mục 1</a></li>
+                    <li><a href="form2.html">Mục 2</a></li>
+                    <li><a href="form3.html">Mục 3</a></li>
+                    <li><a href="form4.html">Mục 4</a></li>
+                    <li><a href="form5.html">Mục 5</a></li>
+                </ul>
+            </div>
+            <div class="middle">
+                <a id="home" href="index.html">T3</a>
+            </div>
+            <div class="right">
+                <img src="" alt="IMG, FLASH...">
+            </div>
+        </div>
+        <div class="footer">
+            <span id="footer">T4</span>
+        </div>
+    </div>
+</body>
+</html>

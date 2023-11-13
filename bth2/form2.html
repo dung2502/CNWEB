@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .form{
+            position: relative;
+            border: solid 1px black;
+            background-color: #cce5ff;
+            width: 400px;
+            height: 25%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .title{
+            text-align: center;
+            padding: 10px;
+            font: bold larger normal;
+            color: red;
+        }
+        .text{
+            padding-left: 20px;
+            padding-bottom: 10px;
+        }
+        .text-box {
+            margin-bottom: 10px;
+        }
+        .text-box input {
+            margin-left: 30px;
+            width: 200px;
+            height: 25px;
+        }
+        .text-area {
+            margin-bottom: 10px;
+        }
+        .text-area textarea {
+            margin-left: 22px;
+            width: 200px;
+            height: 25px;
+        }
+        .file-box {
+            margin-bottom: 10px;
+        }
+        .box {
+            margin-left: 33px;
+            width: 200px;
+            height: 25px;
+        }
+        .browser {
+            width: 60px;
+            height: 25px;
+        }
+        .radio-button{
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+        .checkbox {
+            margin-left: 20px;
+        }
+        .button input {
+            width: 60px;
+            height: 25px;
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+        .button-submit {
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<form action="form2.html" class="form">
+    <div class="title">
+        <span>VÍ DỤ VỀ TẠO FORM</span>
+    </div>
+    <div class="text">
+        <div class="text-box">
+            <label>Text box:</label>
+            <label><input type="text" class="box"></label>
+        </div>
+        <div class="text-area">
+            <label>Text Area:</label>
+            <label><textarea rows="1" cols="20"></textarea></label>
+        </div>
+        <div class="file-box">
+            <label>File box:</label>
+            <label><input type="text" class="box"></label>
+            <label><input type="button" class="browser" value="Browse.." id="filename"></label>
+        </div>
+        <div class="radio-button">
+            <label><input type="radio" name="Radio button"> Radio button</label>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" name="Check box"> Check box</label>
+        </div>
+    </div>
+    <div class="button">
+        <label><input type="submit" class="button-submit" value="Submit"></label>
+        <label><input type="reset" value="Reset"></label>
+    </div>
+</form>
+</body>
+</html>

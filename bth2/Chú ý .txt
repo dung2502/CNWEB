@@ -1,0 +1,7 @@
+Chú ý :
+	<?php $a = Array(1,2,3);
+	      echo $a[0]: //in ra giá trị 1
+	      echo $a[2]: //in ra giá trị 3
+	         $a[1] = 5; ?? giờ đay $a =  Array(1,5,3)
+
+			

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .form{
+            position: absolute;
+            border: solid 1px black;
+            background-color: #ccffcc;
+            width: 400px;
+            height: 25%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .title{
+            text-align: center;
+            padding: 10px;
+        }
+        .input {
+            padding-left: 20px;
+            padding-bottom: 10px;
+        }
+        .input-user {
+            margin-bottom: 10px;
+        }
+        .input-user input {
+            margin-left: 40px;
+            width: 200px;
+            height: 25px;
+        }
+        .input-password input{
+            margin-left: 44px;
+            width: 200px;
+            height: 25px;
+        }
+        .button {
+            text-align: center;
+        }
+        .button input {
+            width: 50px;
+            height: 30px;
+            border-radius: 10%;
+            border: solid 1px;
+            border-collapse: collapse;
+            margin: -2px;
+        }
+    </style>
+</head>
+<body>
+<form action="form1.html" class="form">
+    <div class="title">
+        <span>Login</span>
+    </div>
+    <div class="input">
+        <div class="input-user">
+            <label>Username</label>
+            <label><input type="text" class="username"></label>
+        </div>
+        <div class="input-password">
+            <label>Password</label>
+            <label><input type="password" class="password"></label>
+        </div>
+    </div>
+    <div class="button">
+        <label><input type="submit" class="button-submit" value="OK"></label>
+        <label><input type="reset" value="Reset"></label>
+    </div>
+</form>
+</body>
+</html>

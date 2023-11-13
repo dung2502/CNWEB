@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box-color {
+            border: 1px;
+            background-color: pink;
+            width: 400px;
+            height: 200px;
+        }
+        .box-color input {
+            width: 200px;
+            height: 25px;
+            margin: 20px;
+        }
+        .box-color button{
+            width: 50px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-color">
+        <label><input type="text" id="change-color" value="pink"></label>
+        <button onclick="changeColor()">OK</button>
+    </div>
+    <script>
+        function changeColor(){
+            let color = document.getElementById("change-color").value;
+            let background = document.querySelector(".box-color");
+                background.style.backgroundColor = color;
+            console.log(color);
+            console.log(background);
+        }
+    </script>
+</body>
+</html>
